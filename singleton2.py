@@ -5,16 +5,16 @@
 '''
 
 
-class Singleton(object):
+class SssTon(object):
     _state = {}
 
     def __new__(cls, *args, **kw):
-        ob = super(Singleton, cls).__new__(cls, *args, **kw)
+        ob = super(SssTon, cls).__new__(cls, *args, **kw)
         ob.__dict__ = cls._state
         return ob
 
 
-class MyClass(Singleton):
+class MyClass(SssTon):
     aa = 1
 
 
