@@ -20,5 +20,4 @@ class MyClass(Singleton):
 a = MyClass()
 b = MyClass()
 print id(a), id(b)
-print a
-print b
+print a, b
