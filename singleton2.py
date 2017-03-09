@@ -5,21 +5,21 @@
 '''
 
 
-class SssTon(object):
+class YouAreBoy(object):
     _state = {}
 
     def __new__(cls, *args, **kw):
-        ob = super(SssTon, cls).__new__(cls, *args, **kw)
+        ob = super(YouAreBoy, cls).__new__(cls, *args, **kw)
         ob.__dict__ = cls._state
         return ob
 
 
-class MyClass(SssTon):
+class YourClass(YouAreBoy):
     aa = 1
 
 
-a = MyClass()
-b = MyClass()
+a = YourClass()
+b = YourClass()
 print id(a), id(b)
 print a.aa, b.aa
 a.aa = 44
